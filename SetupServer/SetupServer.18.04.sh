@@ -39,11 +39,11 @@ sudo pip install --upgrade ete3
 ##configure solr
 sudo apt-get --yes install default-jre default-jdk
 cd ~/src
-wget http://mirrors.ircam.fr/pub/apache/lucene/solr/6.6.3/solr-6.6.3.tgz
-tar xvzf solr-6.6.3.tgz
-cd ~/src/solr-6.6.3
+wget http://mirrors.ircam.fr/pub/apache/lucene/solr/6.6.5/solr-6.6.5.tgz
+tar xvzf solr-6.6.5.tgz
+cd ~/src/solr-6.6.5
 bin/solr start
 bin/solr create -c taxo
 bin/solr create -c addi
-cp ~/src/Lifemap/OTHER/solr-config/schema.taxo.xml ~/src/solr-6.6.3/server/solr/taxo/conf/schema.xml
-cp ~/src/Lifemap/OTHER/solr-config/solrconfig.taxo.xml ~/src/solr-6.6.3/server/solr/taxo/conf/solrconfig.xml
+cp ~/src/Lifemap/OTHER/solr-config/schema.taxo.xml ~/src/solr-6.6.5/server/solr/taxo/conf/schema.xml
+cp ~/src/Lifemap/OTHER/solr-config/solrconfig.taxo.xml ~/src/solr-6.6.5/server/solr/taxo/conf/solrconfig.xml
